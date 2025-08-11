@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lost & Found Platform</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Lost & Found</h1>
+        <nav>
+            <a href="#report">Report Lost Item</a>
+            <a href="#search">Search Items</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Report Section -->
+        <section id="report">
+            <h2>Report a Lost Item</h2>
+            <form>
+                <label>Item Name:</label>
+                <input type="text" placeholder="e.g., Black Wallet" required>
+
+                <label>Description:</label>
+                <textarea placeholder="Describe the item..." required></textarea>
+
+                <label>Contact Info:</label>
+                <input type="text" placeholder="Phone or Email" required>
+
+                <button type="submit">Submit Report</button>
+            </form>
+        </section>
+
+        <!-- Search Section -->
+        <section id="search">
+            <h2>Search Found Items</h2>
+            <input type="text" placeholder="Search by keyword...">
+            <div class="items-list">
+                <!-- Example item -->
+                <div class="item">
+                    <h3>Black Wallet</h3>
+                    <p>Found near Main Street on Aug 10, 2025.</p>
+                    <p>Contact: example@email.com</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Lost & Found Platform</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
